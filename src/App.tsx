@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {NavBar} from "./components/NavBar";
+import Autorization from "./pages/Autorization";
+import {AppRouter} from "./components/AppRouter";
+import {Shop} from "./pages/Shop";
+import {Basket} from "./components/Basket";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [modalShow, setModalShow] = React.useState(false);
+    return (
+        <BrowserRouter>
+
+            <NavBar/>
+            <Routes>
+                <Route path={'/'} element={<Shop/>}/>
+                <Route path={'/autorisation'} element={<Autorization/>}/>
+                <Route path={'/Basket'} element={<Basket/>}/>
+            </Routes>
+
+            <AppRouter/>
+
+        </BrowserRouter>
+    );
 }
 
 export default App;
