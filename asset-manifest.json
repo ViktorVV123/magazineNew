@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/magazineNew/static/css/main.0cb6723e.css",
+    "main.js": "/magazineNew/static/js/main.5a16dbcd.js",
+    "static/js/787.28cb0dcd.chunk.js": "/magazineNew/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/magazineNew/index.html",
+    "main.0cb6723e.css.map": "/magazineNew/static/css/main.0cb6723e.css.map",
+    "main.5a16dbcd.js.map": "/magazineNew/static/js/main.5a16dbcd.js.map",
+    "787.28cb0dcd.chunk.js.map": "/magazineNew/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0cb6723e.css",
+    "static/js/main.5a16dbcd.js"
+  ]
+}
